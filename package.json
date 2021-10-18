@@ -1,0 +1,31 @@
+{
+  "name": "SocialToken",
+  "version": "1.0.0",
+  "description": "Privi SocialToken",
+  "main": "config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "deploy:rinkeby": "truffle migrate --network rinkeby --skip-dry-run",
+    "deploy:mainnet": "truffle migrate --network mainnet --skip-dry-run",
+    "deploy:mumbai": "truffle migrate --network mumbai --skip-dry-run",
+    "deploy:matic": "truffle migrate --network matic --skip-dry-run",
+    "verify:rinkeby": "truffle run verify SocialToken --network rinkeby",
+    "verify:mainnet": "truffle run verify SocialToken --network mainnet"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.0.0",
+    "@openzeppelin/test-helpers": "^0.5.10",
+    "@truffle/hdwallet-provider": "^1.2.1",
+    "bignumber.js": "^9.0.1",
+    "bn.js": "^5.2.0",
+    "chai": "^4.3.4",
+    "dotenv": "^8.2.0",
+    "path": "^0.12.7",
+    "truffle-plugin-verify": "^0.5.4"
+  }
+}
